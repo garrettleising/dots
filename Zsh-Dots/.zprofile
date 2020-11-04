@@ -9,7 +9,7 @@ neofetch
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-alias update="sudo apt update && sudo apt upgrade"
+alias update="sudo apt update && sudo apt full-upgrade"
 
 alias ma="vim ~/.zprofile"
 
@@ -54,12 +54,12 @@ function ranger-cd {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
-function ZshUpdate {
+function DotsUpdate {
 	cp ~/.zshrc ~/Projects/dots/Zsh-Dots
 	cp ~/.zprofile ~/Projects/dots/Zsh-Dots
 	cp ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/zeta.zsh-theme ~/Projects/dots/Zsh-Dots/themes
 	cp ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/garrett.zsh-theme ~/Projects/dots/Zsh-Dots/themes
-	cd ~/Projects/dots/Zsh-Dots
+	cd ~/Projects/dots
 }
 
 #Find and open file

@@ -1,2 +1,2 @@
 # dots
-My dot files
+My dot files for fire fox and linux mint

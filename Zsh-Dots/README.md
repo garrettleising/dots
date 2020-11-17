@@ -1,4 +1,4 @@
-# ZshDotfiles
+# Zsh Dot Files
 Custom zsh profile with aliases and themes that I use
 
 ## Install

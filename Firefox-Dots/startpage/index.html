@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
-  <body>
+  <body onload="sayHello();">
     <div class="container">
       <div class="head">
-        <div class="logo"><img src="icons/fox.svg" /></div>
+        <h1 id="name"></h1>
+        <div class="logo">
+          <!-- <img src="icons/fox.svg" /> -->
+        </div>
         <div class="search_box">
+          <img class="engine" id="engineLogo" src="icons/duck.svg" />
 
-          <img class="engine" id="engineLogo" src="icons/duck.svg"/>
-
-          <div id="dSearch" style="display:block;">
+          <div id="dSearch" style="display: block">
             <form class="duck" action="https://duckduckgo.com/" method="get">
-              <input class="input_box" type="text" name="q" placeholder="Search with DuckDuckGo">
-              <button class="button"> <img src="icons/enter.svg" style="cursor:pointer" /></button>
+              <input
+                class="input_box"
+                type="text"
+                name="q"
+                placeholder="Search with DuckDuckGo"
+              />
+              <!-- <button class="button">
+                <img src="icons/enter.svg" style="cursor: pointer" />
+              </button> -->
             </form>
           </div>
-
         </div>
       </div>
 
@@ -29,22 +36,42 @@
         <div class="category">
           <div class="icon"><img src="icons/code.svg" /></div>
           <div class="bookmarks cod">
-            <li><a class="bm" href="https://www.hackerrank.com/dashboard">Hackerrank</a></li>
-            <li><a class="bm" href="https://leetcode.com/problemset/algorithms/">LeetCode</a></li>
-            <li><a class="bm" href="https://stackoverflow.com/">Stackoverflow</a></li>
-            <li><a class="bm" href="https://www.coursera.org/in-progress">Coursera</a></li>
-            <li><a class="bm" href="https://codeforces.com/">CodeForces</a></li>
+            <li>
+              <a class="bm" href="https://www.hackerrank.com/dashboard"
+                >Hackerrank</a
+              >
+            </li>
+            <li>
+              <a class="bm" href="https://leetcode.com/problemset/algorithms/"
+                >LeetCode</a
+              >
+            </li>
+            <li>
+              <a class="bm" href="https://stackoverflow.com/">Stackoverflow</a>
+            </li>
           </div>
         </div>
 
         <div class="category">
           <div class="icon"><img src="icons/docs.svg" /></div>
           <div class="bookmarks doc">
+            <li>
+              <a class="bm" href="https://mail.google.com/mail/u/0/h/">Mail</a>
+            </li>
+            <li>
+              <a class="bm" href="https://github.com/garrettleising">Github</a>
+            </li>
+            <li>
+              <a class="bm" href="https://www.udemy.com/">Udemy</a>
+            </li>
+            <li>
+              <a
+                class="bm"
+                href="https://docs.python.org/3.7/library/index.html"
+                >Python</a
+              >
+            </li>
             <li><a class="bm" href="https://en.cppreference.com/w/">C++</a></li>
-            <li><a class="bm" href="https://docs.python.org/3.7/library/index.html">Python</a></li>
-            <li><a class="bm" href="https://mail.google.com/mail/u/0/h/">Mail</a></li>
-            <li><a class="bm" href="https://github.com/dbuxy218">Github</a></li>
-            <li><a class="bm" href="https://mega.nz/">Mega</a></li>
           </div>
         </div>
 
@@ -52,9 +79,6 @@
           <div class="icon"><img src="icons/entertainment.svg" /></div>
           <div class="bookmarks ent">
             <li><a class="bm" href="https://www.youtube.com/">Youtube</a></li>
-            <li><a class="bm" href="https://twitter.com/home">Twitter</a></li>
-            <li><a class="bm" href="https://www10.gogoanime.io/">Gogoanime</a></li>
-            <li><a class="bm" href="https://kimcartoon.to/">Kimcartoon</a></li>
             <li><a class="bm" href="https://www.reddit.com/">Reddit</a></li>
           </div>
         </div>
@@ -63,26 +87,41 @@
           <div class="icon"><img src="icons/music.svg" /></div>
           <div class="bookmarks mus">
             <li><a class="bm" href="https://open.spotify.com/">Spotify</a></li>
-            <li><a class="bm" href="https://thelastdisaster.org/">LDisaster</a></li>
-            <li><a class="bm" href="https://deathgrind.club/">Deathgrind</a></li>
-            <li><a class="bm" href="https://coreradio.ru/">Core Radio</a></li>
-            <li><a class="bm" href="https://blogmg23.blogspot.com/">Mg23</a></li>
           </div>
         </div>
 
         <div class="category">
           <div class="icon"><img src="icons/art.svg" /></div>
           <div class="bookmarks art">
-            <li><a class="bm" href="https://www.behance.net/">Behance</a></li>
-            <li><a class="bm" href="https://www.deviantart.com/">Deviantart</a></li>
-            <li><a class="bm" href="https://www.tumblr.com/dashboard">Tumblr</a></li>
+            <li>
+              <a class="bm" href="https://www.deviantart.com/">Deviantart</a>
+            </li>
+            <li>
+              <a class="bm" href="https://in.pinterest.com/">Pinterest</a>
+            </li>
             <li><a class="bm" href="https://unsplash.com/">Unsplash</a></li>
-            <li><a class="bm" href="https://in.pinterest.com/">Pinterest</a></li>
+            <li><a class="bm" href="https://www.behance.net/">Behance</a></li>
           </div>
         </div>
-
       </div>
     </div>
-  </body>
+    <!-- <script>
+      var i = 0;
+      var text = "Welcome back Garrett";
+      var speed = 50;
+      var waitTime = 650;
 
+      function typeWriter() {
+        if (i < text.length) {
+          document.getElementById("name").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      function sayHello() {
+        setTimeout(typeWriter, waitTime);
+      }
+    </script> -->
+  </body>
 </html>

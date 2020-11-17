@@ -8,9 +8,9 @@ if [ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ]; 
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
-cp .zprofile ~/
-cp .zshrc ~/
-cp themes/garrett.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
-cp themes/zeta.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
+cp ~/Projects/dots/Zsh-Dots/.zprofile ~/
+cp ~/Projects/dots/Zsh-Dots/.zshrc ~/
+cp ~/Projects/dots/Zsh-Dots/themes/garrett.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
+cp ~/Projects/dots/Zsh-Dots/themes/zeta.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
 
-echo "Finished install!"
+echo "Finished Zsh dots install!"

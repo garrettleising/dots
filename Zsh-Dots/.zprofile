@@ -12,8 +12,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias update="sudo apt update && sudo apt full-upgrade"
 
 # edit dot files
-alias ma="vim ~/.zprofile"
-alias cfsp="code ~/.mozilla/firefox/jiz1ctdu.default/startpage"
+alias ma="vim ~/.zprofile" # make alias
+alias cfsp="code ~/.mozilla/firefox/jiz1ctdu.default/startpage" # change firefox start page
 #---------------------------
 
 alias switchToBash="chsh -s $(which bash)"

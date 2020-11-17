@@ -63,9 +63,9 @@ function ZshUpdate {
 }
 
 function FirefoxUpdate {
-	cp ~/.mozilla/firefox/jiz1ctdu.default/startpage ~/Projects/dots/FireFox-Dots
-	cp ~/.mozilla/firefox/jiz1ctdu.default/chrome ~/Projects/dots/FireFox-Dots
-	cp ~/.mozilla/firefox/jiz1ctdu.default/newtab ~/Projects/dots/FireFox-Dots
+	cp -r ~/.mozilla/firefox/jiz1ctdu.default/startpage/ ~/Projects/dots/Firefox-Dots/startpage
+	cp -r ~/.mozilla/firefox/jiz1ctdu.default/chrome/ ~/Projects/dots/Firefox-Dots/chrome
+	cp -r ~/.mozilla/firefox/jiz1ctdu.default/newtab/ ~/Projects/dots/Firefox-Dots/newtab
 	cd ~/Projects/dots
 }
 

@@ -11,7 +11,10 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 alias update="sudo apt update && sudo apt full-upgrade"
 
+# edit dot files
 alias ma="vim ~/.zprofile"
+alias cfsp="code ~/.mozilla/firefox/jiz1ctdu.default/startpage"
+#---------------------------
 
 alias switchToBash="chsh -s $(which bash)"
 
@@ -68,7 +71,6 @@ function FirefoxUpdate {
 	cp -r ~/.mozilla/firefox/*.default/newtab/ ~/Projects/dots/Firefox-Dots/
 	cd ~/Projects/dots
 }
-
 
 
 #Find and open file

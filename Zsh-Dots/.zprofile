@@ -54,13 +54,22 @@ function ranger-cd {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
-function DotsUpdate {
+function ZshUpdate {
 	cp ~/.zshrc ~/Projects/dots/Zsh-Dots
 	cp ~/.zprofile ~/Projects/dots/Zsh-Dots
 	cp ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/zeta.zsh-theme ~/Projects/dots/Zsh-Dots/themes
 	cp ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/garrett.zsh-theme ~/Projects/dots/Zsh-Dots/themes
 	cd ~/Projects/dots
 }
+
+function FirefoxUpdate {
+	cp ~/.mozilla/firefox/jiz1ctdu.default/startpage ~/Projects/dots/FireFox-Dots
+	cp ~/.mozilla/firefox/jiz1ctdu.default/chrome ~/Projects/dots/FireFox-Dots
+	cp ~/.mozilla/firefox/jiz1ctdu.default/newtab ~/Projects/dots/FireFox-Dots
+	cd ~/Projects/dots
+}
+
+
 
 #Find and open file
 function faof {

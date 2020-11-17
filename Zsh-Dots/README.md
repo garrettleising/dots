@@ -15,7 +15,7 @@ mkdir ~/Projects
 ```
 This is so all the the aliases will work
 ```
-git clone git@github.com:garrettleising/ZshDotfiles.git ~/Projects/ZshDotfiles
+git clone git@github.com:garrettleising/dots.git ~/Projects/dots
 ```
 
 ### Step 3: Install ohyzsh if not already installed

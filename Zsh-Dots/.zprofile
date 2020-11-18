@@ -13,7 +13,7 @@ alias update="sudo apt update && sudo apt full-upgrade"
 
 # edit dot files
 alias ma="vim ~/.zprofile" # make alias
-alias cfsp="code ~/.mozilla/firefox/jiz1ctdu.default/startpage" # change firefox start page
+alias efsp="code ~/.mozilla/firefox/jiz1ctdu.default/startpage" # edit firefox start page
 #---------------------------
 
 alias switchToBash="chsh -s $(which bash)"

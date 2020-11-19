@@ -28,8 +28,3 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 sh install.sh
 ```
-
-### Step 5: Restart Zsh
-```
-exec zsh
-```

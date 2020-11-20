@@ -1,5 +1,5 @@
 # Dot Files
-Custom Dot Files for my Linux Mint setup
+My Custom Dot Files for my Linux Mint setup
 
 ## Install
 

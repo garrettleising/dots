@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- keep -->
   <head>
     <meta charset="UTF-8" />
     <title>Home</title>
@@ -105,11 +106,18 @@
         </div>
       </div>
     </div>
-    <!-- <script>
-      var i = 0;
-      var text = "Welcome back Garrett";
-      var speed = 50;
-      var waitTime = 650;
+    <script>
+      let i = 0;
+      const quotes = [
+        "Oh it's you again? \n lame",
+        "Do you ever sleep?",
+        "I went through your browser history......you need professional help.",
+        "You should've let me write your programs, could've saved you 2 years of wasted time.",
+      ];
+      let index = Math.floor(Math.random() * quotes.length);
+      let text = quotes[index];
+      const speed = 100;
+      const waitTime = 650;
 
       function typeWriter() {
         if (i < text.length) {
@@ -122,6 +130,6 @@
       function sayHello() {
         setTimeout(typeWriter, waitTime);
       }
-    </script> -->
+    </script>
   </body>
 </html>

@@ -9,22 +9,21 @@ weather.temperature = {
 };
 
 // Change to 'F' for Fahrenheit
-var tempUnit = "C";
+var tempUnit = "F";
 
 const KELVIN = 273.15;
 // Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = "aa5b0a76dfbf87541928fb3cc32d3d69";
+const key = "100c4de2b2e0b1f146f5f6e81623d8da";
 
 // Set Position function
-setPosition();
+const santa_clarita = { latitude: 34.3916667, longitude: -118.5416667 };
+const santa_cruz = { latitude: 36.974117, longitude: -122.030792 };
+const san_francisco = { latitude: 37.774929, longitude: -122.419418 };
 
-function setPosition() {
-  // Here you can change your position
-  // You can use https://www.latlong.net/ to get it! (I use San Francisco as an example)
-  let latitude = 37.774929;
-  let longitude = -122.419418;
+setPosition(santa_cruz);
 
-  getWeather(latitude, longitude);
+function setPosition(position) {
+  getWeather(position["latitude"], position["longitude"]);
 }
 
 // Get the Weather data

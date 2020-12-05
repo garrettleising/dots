@@ -18,7 +18,7 @@ if (hour == 4 && min == 20) {
   document.getElementById("greetings").innerText = greet1 + name;
 } else if (hour >= 23 || hour < 5) {
   document.getElementById("greetings").innerText = greet2 + name;
-} else if (hour >= 6 && hour < 12) {
+} else if (hour >= 5 && hour < 12) {
   document.getElementById("greetings").innerText = greet3 + name;
 } else if (hour >= 12 && hour < 17) {
   document.getElementById("greetings").innerText = greet4 + name;

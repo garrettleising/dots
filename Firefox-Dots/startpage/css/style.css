@@ -240,16 +240,16 @@ body {
   grid-column: 2;
 }
 .qlink__link-3 {
-  grid-row: 2;
-  grid-column: 1;
+  grid-row: 1;
+  grid-column: 3;
 }
 .qlink__link-4 {
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 1;
 }
 .qlink__link-5 {
-  grid-row: 1;
-  grid-column: 3;
+  grid-row: 2;
+  grid-column: 2;
 }
 .qlink__link-6 {
   grid-row: 2;
@@ -260,9 +260,6 @@ body {
   transform: translateY(-0.2rem);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
 }
-/* .qlink__link:hover svg {
-  stroke: var(--fg);
-} */
 
 .qlist {
   display: flex;

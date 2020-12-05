@@ -13,15 +13,17 @@ var tempUnit = "F";
 
 const KELVIN = 273.15;
 // Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = "";
+const key = "22317dc6d0a78e06da38e1a89e60b407";
 
 // Set Position function
+const santa_clarita = { latitude: 34.3916667, longitude: -118.5416667 };
+const santa_cruz = { latitude: 36.974117, longitude: -122.030792 };
 const san_francisco = { latitude: 37.774929, longitude: -122.419418 };
 
-setPosition(san_francisco);
+setPosition(santa_cruz);
 
 function setPosition(position) {
-  getWeather(position["latitude"], position["longitude"]);
+  getWeather(position.latitude, position.longitude);
 }
 
 // Get the Weather data

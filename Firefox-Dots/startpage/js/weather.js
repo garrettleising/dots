@@ -13,7 +13,7 @@ var tempUnit = "F";
 
 const KELVIN = 273.15;
 // Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = "22317dc6d0a78e06da38e1a89e60b407";
+const key = "";
 
 // Set Position function
 const santa_clarita = { latitude: 34.3916667, longitude: -118.5416667 };

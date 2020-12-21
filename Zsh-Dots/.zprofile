@@ -72,6 +72,13 @@ function FirefoxUpdate {
 	cd ~/Projects/dots
 }
 
+#Get status of all projects
+function pstatus {
+  cd ~/Projects/
+  ls
+  for directory in *; do (cd "$directory" && pwd && git status && echo "\n"); done
+}
+
 
 #Find and open file
 function faof {

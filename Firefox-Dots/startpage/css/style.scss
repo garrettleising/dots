@@ -7,7 +7,13 @@
   --fses: 18px;
 
   /* dark theme  */
-  --accent: #186efd60;
+  --accent: #948a8b;
+  --accent-red: #fd6883;
+  --accent-orange: #f38d70;
+  --accent-yellow: #f9cc6c;
+  --accent-green: #adda78;
+  --accent-blue: #85dacc;
+  --accent-purple: #a8a9eb;
   --bg: #211c1c;
   --sbg: #2c2525;
   --fg: #fff1f3;
@@ -247,9 +253,26 @@ body {
   grid-column: 3;
 }
 .qlink__link:hover {
-  background-color: var(--accent);
   transform: translateY(-0.2rem);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+}
+.qlink__link-1:hover {
+  background-color: var(--accent-red);
+}
+.qlink__link-2:hover {
+  background-color: var(--accent-orange);
+}
+.qlink__link-3:hover {
+  background-color: var(--accent-yellow);
+}
+.qlink__link-4:hover {
+  background-color: var(--accent-green);
+}
+.qlink__link-5:hover {
+  background-color: var(--accent-blue);
+}
+.qlink__link-6:hover {
+  background-color: var(--accent-purple);
 }
 
 .qlist {

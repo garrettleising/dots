@@ -11,9 +11,12 @@
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 45px;
-  --mff-tab-width: 500px;
   --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: linear-gradient(to right, #f76680 , #d77e65); /*#e2ba64, #adda78, #85dacc, #9c9cd8 */
+  --mff-tab-selected-bg: linear-gradient(
+    to right,
+    #f76680,
+    #d77e65
+  ); /*#e2ba64, #adda78, #85dacc, #9c9cd8 */
   --mff-tab-soundplaying-bg: #9c9cd8;
   --mff-urlbar-color: #72696a;
   --mff-urlbar-focused-color: #fcede0;
@@ -45,7 +48,6 @@
    |_/_/ \_\___/___/
 
 */
-
 
 .tab-background[selected="true"] {
   background: var(--mff-tab-selected-bg) !important;
@@ -125,7 +127,7 @@ hbox.tab-content[pinned="true"] .tab-text {
 }
 
 .tabbrowser-tab {
-  border-radius: var(--mff-tab-border-radius) !important; 
+  border-radius: var(--mff-tab-border-radius) !important;
   border-width: 0;
   height: var(--mff-tab-height) !important;
   margin-bottom: 4px !important;
@@ -133,13 +135,7 @@ hbox.tab-content[pinned="true"] .tab-text {
   margin-top: 4px !important;
   max-height: var(--mff-tab-height) !important;
   min-height: var(--mff-tab-height) !important;
-  /* max-width: 500px !important; */
   padding-inline: 0px !important;
-}
-
-.tabbrowser-tab:not([pinned]) {
-  max-width: 500px !important;
-  min-width: 100px !important;
 }
 
 .tabbrowser-tab[soundplaying="true"] {

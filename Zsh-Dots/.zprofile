@@ -9,7 +9,7 @@ neofetch
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-alias update="sudo apt update && sudo apt full-upgrade"
+alias update="sudo apt update && sudo apt full-upgrade && omz update"
 
 # edit dot files
 alias ma="vim ~/.zprofile" # make alias
@@ -30,7 +30,7 @@ alias p="cd ~/Projects && ls -AlF" # projects
 
 alias st="exec zsh" # st = source terminal
 
-# Silly / Just for fun
+# Just for fun
 alias hypetrain="sl"
 alias afk="cmatrix -s -b"
 alias randoWal="wpg -m"
@@ -100,4 +100,9 @@ for f in *.HEIC; do (heif-convert $f $(basename $f .HEIC)"(converted)".jpg && rm
 #Change photos from HEIC to JPG in subdirectories
 function convertSubHeic() {
 	for d in ./*/; do (cd "$d" && convertHeic); done
+}
+
+#Automatically run ls after cding if less than 10 files
+function cd() {
+   builtin cd $@ && if (( $(ls | wc -l) < 10)); then ls; fi
 }

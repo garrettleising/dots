@@ -28,3 +28,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 sh install.sh
 ```
+
+## Favorite Programs
+
+- cbonsai: https://gitlab.com/jallbrit/cbonsai
+- tty-clock: https://github.com/xorg62/tty-clock
+- neofetch: https://github.com/dylanaraps/neofetch
+- fzf: https://github.com/junegunn/fzf
+- cmatrix: https://github.com/abishekvashok/cmatrix
+

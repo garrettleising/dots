@@ -258,21 +258,27 @@ body {
 }
 .box-link-1:hover {
   background-color: var(--accent-red);
+  transition: 50ms;
 }
 .box-link-2:hover {
   background-color: var(--accent-orange);
+  transition: 50ms;
 }
 .box-link-3:hover {
   background-color: var(--accent-yellow);
+  transition: 50ms;
 }
 .box-link-4:hover {
   background-color: var(--accent-green);
+  transition: 50ms;
 }
 .box-link-5:hover {
   background-color: var(--accent-blue);
+  transition: 50ms;
 }
 .box-link-6:hover {
   background-color: var(--accent-purple);
+  transition: 50ms;
 }
 
 .qlist {

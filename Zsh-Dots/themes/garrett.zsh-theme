@@ -68,11 +68,11 @@ ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$reset_color%}]"
 
 function get_git_prompt {
     if [[ -n $(git rev-parse --is-inside-work-tree 2>/dev/null) ]]; then
-        local git_status="$(git_prompt_status)"
+        local git_status="$(_omz_git_prompt_status)"
         if [[ -n $git_status ]]; then
             git_status="[$git_status%{$reset_color%}]"
         fi
-        local git_prompt=" <$(git_prompt_info)$git_status>"
+        local git_prompt=" <$(_omz_git_prompt_info)$git_status>"
         echo $git_prompt
     fi
 }
@@ -97,11 +97,7 @@ function get_space {
 # Prompt: # USER@MACHINE: DIRECTORY <BRANCH [STATUS]> --- (TIME_STAMP)
 # > command
 function print_prompt_head {
-    local left_prompt="\
-%{$red_bold%}# \
-%{$green_bold%}$(get_usr_name): \
-%{$yellow_bold%}$(get_current_dir)%{$reset_color%}\
-$(get_git_prompt) "
+    local left_prompt="%{$red_bold%}# %{$green_bold%}$(get_usr_name): %{$yellow_bold%}$(get_current_dir)%{$reset_color%}$(get_git_prompt) "
     local right_prompt="%{$blue%}($(get_time_stamp))%{$reset_color%} "
     print -rP "$left_prompt$(get_space $left_prompt $right_prompt)$right_prompt"
 }

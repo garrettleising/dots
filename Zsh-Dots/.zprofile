@@ -7,7 +7,7 @@ neofetch
 
 #----------------------------------------ALiases-------------------------------------------------
 alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 alias update="sudo apt update && sudo apt full-upgrade && omz update"
 

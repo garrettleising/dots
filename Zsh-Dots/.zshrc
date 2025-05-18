@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 PATH=$PATH":$HOME/bin"
+PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/garrett/.oh-my-zsh"
@@ -53,7 +54,7 @@ ENABLE_CORRECTION="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -82,7 +83,6 @@ plugins=(
 	zsh-autosuggestions
 	docker
 	docker-compose
-	docker-machine
 	zsh-syntax-highlighting
    )
 
@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
 else
-    export EDITOR='mvim'
+    export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -130,7 +130,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#----------------------------------------ALiases-------------------------------------------------
+#----------------------------------------Aliases-------------------------------------------------
+
+#Launches tmux by default. This should stay near at the bottom
+#if command -v tmux >/dev/null 2>&1; then
+#   [ -z "$TMUX" ] && exec tmux
+#fi
 
 #Sources all my custom aliases and functions
 [ -f ~/.zprofile ] && source ~/.zprofile
